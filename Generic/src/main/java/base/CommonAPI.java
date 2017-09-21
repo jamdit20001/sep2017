@@ -18,7 +18,7 @@ public class CommonAPI {
     @Parameters({"url"})
     @BeforeMethod
     public static void setUp(String url){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\PeopleNTech\\IdeaProjects\\Web-Automation-Framework\\Generic\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\jamdi\\July2017WebAutoFramework\\Generic\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.navigate().to(url);
